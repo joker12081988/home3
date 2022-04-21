@@ -1,0 +1,49 @@
+/* Обнуление */
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	border: 0;
+} /* обнулили отступы */
+li{
+	list-style: none;
+} /* обнулили списки */
+a,
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+} /* обнулили ссылки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight: inherit;
+	font-size: inherit;
+} /* обнулили заголовки */
+img{
+	vertical-align: top;
+} /* обнулили изображения */
+span{
+	color: blueviolet;
+} /* для всех спан приоритетнее чем селектор класса*/
+.style{
+	color: aqua;
+} /* задан цвет для всех классов style */
+div p{
+	color: green;
+} /* обращение ко всем р в div приоритет выше чем селектор тега*/
+.font{
+	font-size: 20px;
+}
+.text{
+	font-size: 30px;
+	color: chocolate;
+}
+.font>span{
+	color: black;
+}
